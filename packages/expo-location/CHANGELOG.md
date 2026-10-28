@@ -1,5 +1,14 @@
 # Changelog
 
+## 58.0.20
+
+### Patch Changes
+
+- [Android] Fix background location tasks that stop delivering updates after an app update, and the `Context.startForegroundService() did not then call Service.startForeground()` ANR that goes with them. The foreground service now enters the foreground from `onStartCommand` instead of from the asynchronous service connection, and a service that could not be started while the app was in the background is started when the app is resumed. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- [Android] Remove the stored parent `Context` from the legacy location foreground service. `LocationTaskService` extends `Service`, which is already a `Context`, so it now reads `packageManager`, `packageName` and `resources` from itself. This drops a `lateinit` field and the public `setParentContext` setter. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- Updated dependencies.
+  - @expo/image-utils@0.12.6
+
 ## 58.0.19
 
 ### Patch Changes

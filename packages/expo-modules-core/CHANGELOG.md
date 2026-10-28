@@ -1,5 +1,16 @@
 # Changelog
 
+## 58.0.28
+
+### Patch Changes
+
+- [iOS] Add `EventEmitter.emit(event:payload:encode:)`, which emits a payload that a closure encodes into a slot. `expo-modules-macros` uses it for an `@Event` whose payload holds a tuple, which can't conform to `JavaScriptEncodable`. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- [iOS] Update `expo-modules-macros` to 0.27.0, which converts Swift tuples in `@JS` members, `@Record` properties, `@Union` payloads, `@Event` payloads and closure arguments, and resolves the tuple type aliases declared in `@ExpoModule` and `@SharedObject` classes. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- [iOS] Update `expo-modules-macros` to 0.27.1, which binds sync `@JS` functions that return nothing through the `Void` host function overload. This reduces the overhead of calling them. ([`f3f9271`](https://github.com/expo/expo/commit/f3f9271ee23791ec59a7e22d37a41c075510308c) by [@tsapeta](https://github.com/tsapeta))
+- [iOS] Reduce the overhead of passing an existing shared object to JavaScript, as a function result or an event payload, and of emitting events from shared objects. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- Updated dependencies. ([#52382](https://github.com/expo/expo/pull/52382))
+  - expo-modules-jsi@58.0.21
+
 ## 58.0.27
 
 ### Patch Changes

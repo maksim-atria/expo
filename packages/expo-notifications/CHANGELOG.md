@@ -1,5 +1,14 @@
 # Changelog
 
+## 58.1.7
+
+### Patch Changes
+
+- [Android] Fix importing `expo-notifications` throwing `Cannot find native module 'ExpoTopicSubscriptionModule'` in Expo Go. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- Updated dependencies.
+  - @expo/image-utils@0.12.6
+  - expo-constants@58.0.14
+
 ## 58.1.6
 
 ### Patch Changes

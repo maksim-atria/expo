@@ -1,5 +1,13 @@
 # minimal-swiftpm
 
+## 1.0.15
+
+### Patch Changes
+
+- Updated dependencies.
+  - expo@58.0.21
+  - expo-constants@58.0.14
+
 ## 1.0.14
 
 ### Patch Changes

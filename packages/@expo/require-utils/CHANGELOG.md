@@ -1,5 +1,11 @@
 # Changelog
 
+## 58.0.5
+
+### Patch Changes
+
+- Fix server stack traces in development pointing at the wrong source file on Node 24.22 and later. Server bundle source maps are now read before their temporary files are removed, and loader bundles are marked in their bundle URL so Metro symbolicates them against the right bundle. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+
 ## 58.0.4
 
 ### Patch Changes

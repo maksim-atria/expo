@@ -1,5 +1,22 @@
 # Changelog
 
+## 58.0.21
+
+### Patch Changes
+
+- Updated dependencies. ([#52382](https://github.com/expo/expo/pull/52382), [#52388](https://github.com/expo/expo/pull/52388), [`f3f9271`](https://github.com/expo/expo/commit/f3f9271ee23791ec59a7e22d37a41c075510308c))
+  - @expo/cli@58.1.17
+  - expo-modules-cli@0.4.0
+  - expo-modules-core@58.0.28
+  - @expo/metro-config@58.0.19
+  - @expo/config@58.0.9
+  - @expo/config-plugins@58.0.11
+  - expo-constants@58.0.14
+  - expo-modules-autolinking@58.0.16
+  - babel-preset-expo@58.0.22
+  - @expo/local-build-cache-provider@58.0.9
+  - expo-asset@58.0.19
+
 ## 58.0.20
 
 ### Patch Changes

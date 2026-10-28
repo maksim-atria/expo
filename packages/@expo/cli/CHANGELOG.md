@@ -1,5 +1,21 @@
 # Changelog
 
+## 58.1.17
+
+### Patch Changes
+
+- Fix server stack traces in development pointing at the wrong source file on Node 24.22 and later. Server bundle source maps are now read before their temporary files are removed, and loader bundles are marked in their bundle URL so Metro symbolicates them against the right bundle. ([#52382](https://github.com/expo/expo/pull/52382) by [@github-actions](https://github.com/apps/github-actions))
+- Fix `npx expo start --localhost` refusing connections on `127.0.0.1`. ([#52388](https://github.com/expo/expo/pull/52388) by [@ramonclaudio](https://github.com/ramonclaudio))
+- Updated dependencies. ([#52382](https://github.com/expo/expo/pull/52382))
+  - @expo/require-utils@58.0.5
+  - @expo/metro-config@58.0.19
+  - @expo/config@58.0.9
+  - @expo/config-plugins@58.0.11
+  - @expo/image-utils@0.12.6
+  - @expo/prebuild-config@58.0.17
+  - @expo/inline-modules@0.2.8
+  - @expo/router-server@58.0.19
+
 ## 58.1.16
 
 ### Patch Changes
